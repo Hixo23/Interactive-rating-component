@@ -1,7 +1,7 @@
 const buttons = document.querySelectorAll('.rates');
 let selectedNumber = 0;
 
-const resetElement = (element) => {
+const resetElement = () => {
     const activeElement = document.querySelector('.selected');
     activeElement ? activeElement.classList.remove('selected') : '';
 }
@@ -9,7 +9,7 @@ const resetElement = (element) => {
 buttons.forEach(button => {
     button.addEventListener('click', (event) => {
         if(event.target.nodeName == "DIV") return;
-        resetElement(event.target);
+        resetElement();
         event.target.classList.add('selected');
         selectedNumber = event.target.textContent;
     })
