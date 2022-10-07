@@ -8,7 +8,8 @@ const resetElement = () => {
 
 
     buttons.addEventListener('click', (event) => {
-        if(event.target.nodeName === "DIV") return;
+        console.log(event.target)
+        if(event.target.nodeName === "UL" || event.target.nodeName === "LI") return;
         resetElement();
         event.target.classList.add('selected');
         selectedNumber = event.target.textContent;
