@@ -50,8 +50,8 @@ body {
   background-position: center;
   border-radius: 50%;
   margin-left: 2rem;
-  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  transform: translate(0, 50%);
 }
 
 .text {
@@ -71,6 +71,7 @@ body {
   display: flex;
   justify-content: space-around;
   margin-top: 2rem;
+  list-style: none;
 }
 
 .rate {
